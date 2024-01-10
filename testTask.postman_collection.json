@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "c0bba3cb-55c3-42b8-bd35-4f835a9dc850",
+		"name": "testTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26152642",
+		"_collection_link": "https://grey-star-557823.postman.co/workspace/New-Team-Workspace~4b53cd5c-6112-43ec-a188-a470fbc4abf6/collection/26152642-c0bba3cb-55c3-42b8-bd35-4f835a9dc850?action=share&source=collection_link&creator=26152642"
+	},
+	"item": [
+		{
+			"name": "countPopularWordsFromSource",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/count?url=https://github.com/spotify/scio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"count"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "https://github.com/spotify/scio"
+						},
+						{
+							"key": "gitHubBranch",
+							"value": "main",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
